@@ -1,13 +1,16 @@
 {
   "name": "oceanbao-ts-pkg",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Demo packaging using typescript",
-  "main": "index.js",
+  "private": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "scripts": {
     "dev": "vitest",
     "test": "vitest run",
     "build": "tsup src/index.ts --format cjs,esm --dts",
-    "release": "pnpm run build && changeset publish",
+    "release": "pnpm run ci && pnpm changeset publish",
     "lint": "tsc",
     "ci": "pnpm run lint && pnpm run test && pnpm run build"
   },
@@ -15,6 +18,7 @@
   "author": "Ocean Bao",
   "license": "MIT",
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "@types/node": "^18.15.8",
     "tsup": "^6.7.0",
     "typescript": "^5.0.2",
