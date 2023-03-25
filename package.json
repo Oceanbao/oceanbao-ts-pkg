@@ -1,7 +1,7 @@
 {
   "name": "oceanbao-ts-pkg",
   "version": "0.0.1",
-  "description": "",
+  "description": "Demo packaging using typescript",
   "main": "index.js",
   "scripts": {
     "dev": "vitest",
