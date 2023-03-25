@@ -1,0 +1,16 @@
+{
+  "name": "oceanbao-ts-pkg",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Ocean Bao",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.8",
+    "typescript": "^5.0.2"
+  }
+}
